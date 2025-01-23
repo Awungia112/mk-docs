@@ -5,7 +5,7 @@ site_url: 'https://Awungia112.github.io/mk-docs'  # Change this to your site's U
 
 # Theme settings
 theme:
-  name: material
+  name: mkdocs
 
 # Navbar settings (site structure)
 nav:
