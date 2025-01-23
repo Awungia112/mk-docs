@@ -1,5 +1,7 @@
-on: Awungia112
-  push:
+name: Awungia112
+
+on:
+   push:
     branches:
       - master
     
