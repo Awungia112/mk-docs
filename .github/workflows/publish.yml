@@ -1,4 +1,4 @@
-on:
+on: Awungia112
   push:
     branches:
       - master
