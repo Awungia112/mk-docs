@@ -1,10 +1,10 @@
 name: automate build and deploy
-  on:
+on:
      push:
        branches:
        - master
 
-  jobs:
+jobs:
     build:
        runs-on: ubuntu-22.04
        permissions:
