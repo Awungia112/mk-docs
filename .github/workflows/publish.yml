@@ -2,8 +2,8 @@ name: automated build and deploy
 
 on:
    push:
-         branches:
-         - master
+      branches:
+      - master
     
 jobs:
   build:
@@ -25,12 +25,12 @@ jobs:
     
    
      - name: Build Project
-     - uses: docker/build-push-action@v4
+       uses: docker/build-push-action@v4
        with:
            context: .
            push: true
            tag: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.run_number }}
+            ghcr.io/${{ vars.REPOSITORY }}:latest
+            ghcr.io/${{ vars.REPOSITORY }}:${{ github.run_number }}
 
         
